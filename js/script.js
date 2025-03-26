@@ -1,10 +1,4 @@
 
-//Calcolare il prezzo del biglietto
-
-
-
-
-//Sconti etá
 document.getElementById("genera").addEventListener("click", function () {
 
     const km = document.getElementById("km").value;
@@ -23,10 +17,19 @@ document.getElementById("genera").addEventListener("click", function () {
     console.log(`Il prezzo del biglietto é : ${ticketPrice} €`)
 
 });
-//Human price
 
 
+const form = document.querySelector("form");
+const km = document.getElementById("km");
+const age = document.getElementById("seleziona-etá");
+const pulsante = document.getElementById("genera");
+const kmpercorsi = document.getElementById("km-percorsi");
+const prezzobiglietto = document.getElementById("prezzo-biglietto");
 
-//Risultato
+form.addEventListener('submit', function(event){
+    //evita il refresh pagina
+    event.preventDefault();
 
-
+    kmpercorsi.innerHTML = km.value
+    prezzobiglietto.innerHTML = ticketPrice.value
+});
