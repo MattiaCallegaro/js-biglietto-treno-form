@@ -2,11 +2,12 @@ const form = document.querySelector("form");
 const kmInput = document.getElementById("km");
 const ageInput = document.getElementById("seleziona-etá");
 const pulsanteGenera = document.getElementById("genera");
+const pulsanteAnnulla = document.getElementById("annulla");
 const kmPercorsiElement = document.getElementById("km-percorsi");
 const ticketPriceElement= document.getElementById("prezzo-biglietto");
 
 document.getElementById("genera").addEventListener( "click", function () {
-
+    
     const km = document.getElementById("km").value;
     const age = document.getElementById("seleziona-etá").value;
 
@@ -29,14 +30,16 @@ document.getElementById("genera").addEventListener( "click", function () {
 
 });
 
+document.getElementById("annulla").addEventListener( "click", function () {
+    document.getElementById("km").value ="" ;
+    document.getElementById("seleziona-etá").value ="" ;
 
 
-
-form.addEventListener("submit", function(event){
-    //evita il refresh pagina
-    event.preventDefault();
-    generaBtn.click();
-
-    
 });
+
+
+
+
+
+
 
