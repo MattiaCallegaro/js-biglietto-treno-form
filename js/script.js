@@ -1,7 +1,7 @@
 const form = document.querySelector("form");
 const kmInput = document.getElementById("km");
 const ageInput = document.getElementById("seleziona-etá");
-const pulsanteBtn = document.getElementById("genera");
+const pulsanteGenera = document.getElementById("genera");
 const kmPercorsiElement = document.getElementById("km-percorsi");
 const ticketPriceElement= document.getElementById("prezzo-biglietto");
 
