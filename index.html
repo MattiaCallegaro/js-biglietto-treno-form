@@ -11,27 +11,21 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
+    <div class="container-full">
+        <div class="row my-3">
             <div class="col-md-12 text-center">
                 <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
             </div>
             <form action="">
                 <div class="row row-cols-12 text-center">
-                    <div class="col ">
-                        <input type="text" placeholder="Nome e cognome" name="" id="">
-                        <input type="text" placeholder="km da percorrere" name="" id="">
-                        <select name="" id="seleziona-etá">
-                            <option value="">Seleziona</option>
-                            <option value="">Minorenne</option>
-                            <option value="">Over 65</option>
-                        </select>
+                    <div class="col my-3">
+                        <input type="number" placeholder="km da percorrere" name="" id="km">
+                        <input type="number" placeholder="Inserisci età" name="" id="seleziona-etá">
                     </div>
                 </div>
                 <div class="row row-cols-12  text-center">
-                    <div class="col">
-                        <input type="button" value="genera">
-                        <input type="button" value="annulla">
+                    <div class="col my-3">
+                        <input type="button" id="genera" value="genera">
                     </div>
                 </div>
             </form>
