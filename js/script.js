@@ -23,7 +23,7 @@ document.getElementById("genera").addEventListener( "click", function () {
     ticketPrice = ticketPrice.toFixed(2);
 
     kmPercorsiElement.textContent = km + " km";
-    
+    ticketPriceElement.textContent = ticketPrice + " €";
 
     console.log(`Il prezzo del biglietto é : ${ticketPrice} €`)
 
