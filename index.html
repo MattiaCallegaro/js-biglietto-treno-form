@@ -12,56 +12,77 @@
 
 <body>
     <div class="container">
-        <div class="row my-3">
-            <div class="col-md-12 text-center">
-                <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-            </div>
-            <div class="card-body my-2">
-                <form action="">
-                    <div class="row row-cols-12  text-center">
-                        <div class="col my-3">
-                            <input type="text" placeholder="km da percorrere" name="" id="km">
-                            <input type="text" placeholder="Inserisci età" name="" id="seleziona-etá">
-                        </div>
-                    </div>
-                    <div class="row row-cols-12  text-center">
-                        <div class="col my-3">
-                            <input type="button" id="genera" value="genera">
-                            <input type="button" id="annulla" value="annulla">
-                            
-                        </div>
-                    </div>
-            </div>
-            </form>
-            <div class="col-md-12 my-3 text-center">
-                <h2>IL TUO BIGLIETTO</h2>
-            </div>
-            <div class="card  bg-secondary my-1">
-                <div class="row d-flex justify-content-around  my-3">
-                    <div class="card border-3 border-warning align-items-center col-4">
-                        <div class="card-body">
-                            <p>
-                                <span id="km-percorsi">Km percorsi</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card border-3 border-warning align-items-center col-4">
-                        <div class="card-body">
-                            <p>
-                                <span id="prezzo-biglietto">Prezzo</span>
-                            </p>
-                        </div>
-                    </div>
+        <div class="card  bg-secondary my-1">
+            <div class="row my-3">
+                <div class="col-md-12 text-center">
+                    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
                 </div>
+                <div class="card-body my-5">
+                    <form action="">
+                        <div class="row row-cols-12 d-flex justify-content-around text-center">
+                            <div class="card border-3 border-warning align-items-center col-3">
+                                <div class="card-body">
+                                    <input type="text" placeholder="Nome e cognome" name="" id="nome-cognome-output">
+                                </div>
+                            </div>
+                            <div class="card border-3 border-warning align-items-center col-3">
+                                <div class="card-body">
+                                    <input type="text" placeholder="km da percorrere" name="" id="km">
+                                </div>
+                            </div>
+                            <div class="card border-3 border-warning align-items-center col-3">
+                                <div class="card-body">
+                                    <input type="text" placeholder="Inserisci età" name="" id="seleziona-etá">
+                                </div>
+                            </div>
+                            <div class="row row-cols-12 d-flex text-center">
+                                <div class="col my-5 ">
+                                    <input type="button" id="genera" value="genera">
+                                    <input type="button" id="annulla" value="annulla">
 
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-md-12 my-3 text-center">
+                        <h2>IL TUO BIGLIETTO</h2>
+                    </div>
+
+                    <div class="row d-flex justify-content-around  my-3">
+
+                        <div class="card border-3 border-warning align-items-center col-3">
+                            <div class="card-body">
+                                <p>
+                                    <span id="nome-cognome">Nome e cognome</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card border-3 border-warning align-items-center col-3">
+                            <div class="card-body">
+                                <p>
+                                    <span id="km-percorsi">Km percorsi</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card border-3 border-warning align-items-center col-3">
+                            <div class="card-body">
+                                <p>
+                                    <span id="prezzo-biglietto">Prezzo</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
